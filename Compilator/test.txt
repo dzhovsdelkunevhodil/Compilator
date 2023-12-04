@@ -1,0 +1,26 @@
+main() {
+    integer x;
+    integer z;
+    z = 2;
+    bool y;
+    y = true;
+    
+    if (x == 5) then
+        while x > 2;
+            x = x - 1;
+            z = x + z + convert_s(y);
+        endwhile;
+    else
+        z = convert_s(y);
+    endif;
+}
+
+string proc convert_s(bool y) {
+    integer result;
+    if (y == true) then
+        result = 1;
+    else
+        result = 2;
+    endif;
+    return result;
+}

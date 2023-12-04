@@ -1,0 +1,11 @@
+arr db ?
+res dd ?
+var dd ?
+i dd ?
+j dd ?
+b db ?
+str db ?
+TEMP0 dd ?
+TEMP1 dd ?
+TEMP2 dd ?
+TEMP3 dd ?

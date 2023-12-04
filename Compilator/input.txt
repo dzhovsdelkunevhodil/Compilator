@@ -1,0 +1,27 @@
+#include <stdlib>
+//#include <vector>
+
+	int proc length (char arr){ /*asdasdasd*/
+		int res;
+		//int res;
+		res = 20; //esr
+		return res;
+	};
+
+	int main() {
+		int var; 
+		int i;
+		int j;
+		//u = 1;
+		/*asdasdasd*/
+		bool b;
+		b = 0;
+		char str[20];//!!!
+		j = 11;
+		i=0;
+		do { 
+			var = length(str[0]) + i*j; //*drtufygku*/
+			i++;
+			b = j*j-var;
+		} while (b);
+	}
