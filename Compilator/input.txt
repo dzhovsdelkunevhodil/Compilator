@@ -1,7 +1,7 @@
 #include <stdlib>
 //#include <vector>
 
-	int proc length (char arr){ /*asdasdasd*/
+	int proc length (char arr){ /*asdasdasd*/ //[20]
 		int res;
 		//int res;
 		res = 20; //esr
@@ -18,10 +18,12 @@
 		b = 0;
 		char str[20];//!!!
 		j = 11;
+		b = j;
 		i=0;
+		b = length(str);
 		do { 
-			var = length(str[0]) + i*j; //*drtufygku*/
+			var = length(str)+i*j; //*drtufygku*/
 			i++;
-			b = j*j-var;
+			b = j-j*var;
 		} while (b);
 	}

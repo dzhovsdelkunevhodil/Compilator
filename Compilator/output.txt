@@ -1,11 +1,46 @@
-arr db ?
 res dd ?
 var dd ?
 i dd ?
 j dd ?
 b db ?
 str db ?
-TEMP0 dd ?
-TEMP1 dd ?
-TEMP2 dd ?
-TEMP3 dd ?
+
+TEMP dd 0
+TEMPres dd 0
+
+library stdlib
+
+length proc
+mov res , 20
+push res
+ret
+length endproc
+
+
+main proc
+
+mov b , 0
+mov j , 11
+mov b , j
+mov i , 0
+push str
+call length
+mov b , res
+circle: 
+mov TEMP , j
+mul TEMP , i
+mov TEMPres , TEMP
+push str
+call length
+add TEMPres , res
+mov var , TEMPres
+inc i
+mov TEMP , var
+mul TEMP , j
+mov TEMPres , TEMP
+sub TEMPres , j
+mov b , TEMPres
+cmp b , 0
+jnz circle
+
+main endp

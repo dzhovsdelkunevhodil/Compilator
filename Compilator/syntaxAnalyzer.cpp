@@ -381,9 +381,6 @@ std::shared_ptr<Node> syntaxAnalyzer::analysisCallF()
     children.push_back(Match("("));
     while (IsMatch(reprIdTable)) {
         children.push_back(analysisIdentif());
-        children.push_back(Match("["));
-        children.push_back(analysisConst());
-        children.push_back(Match("]"));
         arg1++;
         if (!IsMatch(")"))
             children.push_back(Match(","));
@@ -652,10 +649,6 @@ void syntaxAnalyzer::NextLexema()
 void syntaxAnalyzer::error() {
     int i = 0;
     std::cout << "Error in row #" << lexStream[lexIndex].n_row;
-   /* while (lexemClass[lexStream[i].lexClass] != lexemClass[lexStream[lexIndex].lexClass] || i != lexIndex) {
-        std::cout << lexemClass[lexStream[i].lexClass] << std::endl;
-        i++;
-    }*/
 }
 
 

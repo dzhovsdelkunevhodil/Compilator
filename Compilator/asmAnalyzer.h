@@ -12,6 +12,11 @@ private:
 	int countOperators;
 	std::vector<std::string> idType;
 	std::vector<std::string> idTypeFunc;
+	std::vector<std::string> TEMPIDTable;
+	std::string parameter;
+	std::string lastOperation;
+	int flagLastOperation;
+
 
 
 public:
@@ -29,7 +34,11 @@ public:
 	}
 
 	void analysis();
+
+	std::string analysisExpression(const std::shared_ptr<Node>& node);
 	void analysisBody(const std::shared_ptr<Node>& node);
+	void analysisS();
+	std::string analysisIDOrCallF(const std::shared_ptr<Node>& node);
 
 
 	void analysisCountID();
